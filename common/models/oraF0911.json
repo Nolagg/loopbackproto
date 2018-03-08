@@ -1,0 +1,1521 @@
+{
+  "name": "oraF0911",
+  "options": {
+    "idInjection": false,
+    "plural": "oraF0911",
+    "oracle": {
+      "schema": "JDEDATA910",
+      "table": "F0911"
+    }
+  },
+  "properties": {
+    "GLDCTO": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLDCTO",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLLNID": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLLNID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLWY": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLWY",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLWN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLWN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLFNLP": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLFNLP",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLOPSQ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLOPSQ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLJBCD": {
+      "type": "String",
+      "required": false,
+      "length": 12,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLJBCD",
+        "dataType": "NCHAR",
+        "dataLength": 12,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLJBST": {
+      "type": "String",
+      "required": false,
+      "length": 8,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLJBST",
+        "dataType": "NCHAR",
+        "dataLength": 8,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLHMCU": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLHMCU",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLDOI": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLDOI",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLALID": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLALID",
+        "dataType": "NCHAR",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLALTY": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLALTY",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLDSVJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "GLDSVJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "GLTORG": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLTORG",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLREG#": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLREG#",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPYID": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPYID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLUSER": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLUSER",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPID": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPID",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLJOBN": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLJOBN",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLUPMJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "GLUPMJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "GLUPMT": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLUPMT",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLABR1": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLABR1",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLABR2": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLABR2",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLABR3": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLABR3",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLABR4": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLABR4",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLABT1": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLABT1",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLABT2": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLABT2",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLABT3": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLABT3",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLABT4": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLABT4",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLITM": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLITM",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM01": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM01",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM02": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM02",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM03": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM03",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM04": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM04",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM05": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM05",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM06": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM06",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM07": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM07",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM08": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM08",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM09": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM09",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPM10": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPM10",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLBCRC": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLBCRC",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLCRRM": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLCRRM",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPRGF": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPRGF",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLTXA1": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLTXA1",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLEXR1": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLEXR1",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLTXITM": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLTXITM",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLACTB": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLACTB",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLGPF1": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLGPF1",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLACR": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLACR",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLDLNID": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLDLNID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLCKNU": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLCKNU",
+        "dataType": "NCHAR",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLBUPC": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLBUPC",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLAHBU": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLAHBU",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLEPGC": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLEPGC",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLJPGC": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLJPGC",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLRC5": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLRC5",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLSFXE": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLSFXE",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLOFM": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLOFM",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLKCO": {
+      "type": "String",
+      "id": 3,
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLKCO",
+        "dataType": "NCHAR",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLDCT": {
+      "type": "String",
+      "id": 1,
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLDCT",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLDOC": {
+      "type": "Number",
+      "id": 2,
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLDOC",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLDGJ": {
+      "type": "Number",
+      "id": 4,
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "GLDGJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "GLJELN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLJELN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLEXTL": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLEXTL",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPOST": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPOST",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLICU": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLICU",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLICUT": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLICUT",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLDICJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "GLDICJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "GLDSYJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "GLDSYJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "GLTICU": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLTICU",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLCO": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLCO",
+        "dataType": "NCHAR",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLANI": {
+      "type": "String",
+      "required": false,
+      "length": 58,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLANI",
+        "dataType": "NCHAR",
+        "dataLength": 58,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLAM": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLAM",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLAID": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLAID",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLMCU": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLMCU",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLOBJ": {
+      "type": "String",
+      "required": false,
+      "length": 12,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLOBJ",
+        "dataType": "NCHAR",
+        "dataLength": 12,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLSUB": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLSUB",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLSBL": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLSBL",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLSBLT": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLSBLT",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLLT": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLLT",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLPN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLPN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLCTRY": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLCTRY",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLFY": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLFY",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLFQ": {
+      "type": "String",
+      "required": false,
+      "length": 8,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLFQ",
+        "dataType": "NCHAR",
+        "dataLength": 8,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLCRCD": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLCRCD",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLCRR": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLCRR",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLHCRR": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLHCRR",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLHDGJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "GLHDGJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "GLAA": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLAA",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLU": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLU",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLUM": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLUM",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLGLC": {
+      "type": "String",
+      "required": false,
+      "length": 8,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLGLC",
+        "dataType": "NCHAR",
+        "dataLength": 8,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLRE": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLRE",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLEXA": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLEXA",
+        "dataType": "NCHAR",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLEXR": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLEXR",
+        "dataType": "NCHAR",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLR1": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLR1",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLR2": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLR2",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLR3": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLR3",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLSFX": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLSFX",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "GLODOC": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "GLODOC",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

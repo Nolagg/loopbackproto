@@ -1,0 +1,91 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "oracleDS",
+    "public": false
+  },
+  "AccessToken": {
+    "dataSource": "oracleDS",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "oracleDS",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "oracleDS",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "oracleDS",
+    "public": false
+  },
+  "ENVIRONMENTS": {
+    "dataSource": "oracleDS",
+    "public": false
+  },
+  "oraF0911": {
+    "dataSource": "oracleDS",
+    "public": true
+  },
+  "F4111": {
+    "dataSource": "oracleDS",
+    "public": false
+  },
+  "PURGE_SET": {
+    "dataSource": "oracleDS",
+    "public": false
+  },
+  "PURGE_MODULE": {
+    "dataSource": "mssqlDS",
+    "public": false
+  },
+  "msF0911": {
+    "dataSource": "mssqlJDE",
+    "public": true
+  },
+  "oraARCENG_CFG": {
+    "dataSource": "oracleDS",
+    "public": true
+  },
+  "mststF0911": {
+    "dataSource": "mssqlTESTDTA",
+    "public": true
+  },
+  "mongoF0911": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "mongo2F0911": {
+    "dataSource": "MongoDB",
+    "public": false
+  },
+  "oraArcF0911": {
+    "dataSource": "oracleDS",
+    "public": true
+  },
+  "oraAem2F0911": {
+    "dataSource": "oraAem2DS",
+    "public": true
+  },
+  "db2F0911": {
+    "dataSource": "localDB2",
+    "public": true
+  }  
+}

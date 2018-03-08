@@ -1,0 +1,5656 @@
+paths:
+  '/Users/{id}/accessTokens/{fk}':
+    get:
+      tags:
+        - User
+      summary: Find a related item by id for accessTokens.
+      operationId: User.prototype.__findById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+    delete:
+      tags:
+        - User
+      summary: Delete a related item by id for accessTokens.
+      operationId: User.prototype.__destroyById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+    put:
+      tags:
+        - User
+      summary: Update a related item by id for accessTokens.
+      operationId: User.prototype.__updateById__accessTokens
+      parameters:
+        - name: fk
+          in: path
+          description: Foreign key for accessTokens
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccessToken'
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+  '/Users/{id}/accessTokens':
+    get:
+      tags:
+        - User
+      summary: Queries accessTokens of User.
+      operationId: User.prototype.__get__accessTokens
+      parameters:
+        - name: filter
+          in: query
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/AccessToken'
+      deprecated: false
+    post:
+      tags:
+        - User
+      summary: Creates a new instance in accessTokens of this model.
+      operationId: User.prototype.__create__accessTokens
+      parameters:
+        - name: data
+          in: body
+          required: false
+          schema:
+            $ref: '#/definitions/AccessToken'
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/AccessToken'
+      deprecated: false
+    delete:
+      tags:
+        - User
+      summary: Deletes all accessTokens of this model.
+      operationId: User.prototype.__delete__accessTokens
+      parameters:
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Users/{id}/accessTokens/count':
+    get:
+      tags:
+        - User
+      summary: Counts accessTokens of User.
+      operationId: User.prototype.__count__accessTokens
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Users:
+    post:
+      tags:
+        - User
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: User.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    patch:
+      tags:
+        - User
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: User.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    put:
+      tags:
+        - User
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: User.replaceOrCreate__put_Users
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    get:
+      tags:
+        - User
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: User.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/User'
+      deprecated: false
+  /Users/replaceOrCreate:
+    post:
+      tags:
+        - User
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: User.replaceOrCreate__post_Users_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  /Users/upsertWithWhere:
+    post:
+      tags:
+        - User
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: User.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  '/Users/{id}/exists':
+    get:
+      tags:
+        - User
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'User.exists__get_Users_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/Users/{id}':
+    head:
+      tags:
+        - User
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'User.exists__head_Users_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - User
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: User.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    put:
+      tags:
+        - User
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'User.replaceById__put_Users_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+    delete:
+      tags:
+        - User
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: User.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - User
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: User.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/User'
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  '/Users/{id}/replace':
+    post:
+      tags:
+        - User
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'User.replaceById__post_Users_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  /Users/findOne:
+    get:
+      tags:
+        - User
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: User.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/User'
+      deprecated: false
+  /Users/update:
+    post:
+      tags:
+        - User
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: User.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/User'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /Users/count:
+    get:
+      tags:
+        - User
+      summary: Count instances of the model matched by where from the data source.
+      operationId: User.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /Users/login:
+    post:
+      tags:
+        - User
+      summary: Login a user with username/email and password.
+      operationId: User.login
+      parameters:
+        - name: credentials
+          in: body
+          required: true
+          schema:
+            type: object
+        - name: include
+          in: query
+          description: Related objects to include in the response. See the description of return value for more details.
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: >+
+              The response body contains properties of the AccessToken created on
+              login.
+
+              Depending on the value of `include` parameter, the body may contain
+              additional properties:
+
+
+
+
+
+
+
+                - `user` - `U+007BUserU+007D` - Data of the currently logged in
+
+              user. (`include=user`)
+
+
+            type: object
+      deprecated: false
+  /Users/logout:
+    post:
+      tags:
+        - User
+      summary: Logout a user with access token.
+      operationId: User.logout
+      parameters: []
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  '/Users/{id}/verify':
+    post:
+      tags:
+        - User
+      summary: "Trigger user's identity verification with configured verifyOptions"
+      operationId: User.prototype.verify
+      parameters:
+        - name: id
+          in: path
+          description: User id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Users/confirm:
+    get:
+      tags:
+        - User
+      summary: Confirm a user registration with identity verification token.
+      operationId: User.confirm
+      parameters:
+        - name: uid
+          in: query
+          required: true
+          type: string
+        - name: token
+          in: query
+          required: true
+          type: string
+        - name: redirect
+          in: query
+          required: false
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Users/reset:
+    post:
+      tags:
+        - User
+      summary: Reset password for a user with email.
+      operationId: User.resetPassword
+      parameters:
+        - name: options
+          in: body
+          required: true
+          schema:
+            type: object
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Users/change-password:
+    post:
+      tags:
+        - User
+      summary: "Change a user's password."
+      operationId: User.changePassword
+      parameters:
+        - name: oldPassword
+          in: formData
+          required: true
+          type: string
+        - name: newPassword
+          in: formData
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /Users/reset-password:
+    post:
+      tags:
+        - User
+      summary: "Reset user's password via a password-reset token."
+      operationId: User.setPassword
+      parameters:
+        - name: newPassword
+          in: formData
+          required: true
+          type: string
+      responses:
+        '204':
+          description: Request was successful
+      deprecated: false
+  /ENVIRONMENTS:
+    post:
+      tags:
+        - ENVIRONMENTS
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: ENVIRONMENTS.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/ENVIRONMENTS'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+    patch:
+      tags:
+        - ENVIRONMENTS
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: ENVIRONMENTS.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/ENVIRONMENTS'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+    put:
+      tags:
+        - ENVIRONMENTS
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: ENVIRONMENTS.replaceOrCreate__put_ENVIRONMENTS
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/ENVIRONMENTS'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+    get:
+      tags:
+        - ENVIRONMENTS
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: ENVIRONMENTS.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+  /ENVIRONMENTS/replaceOrCreate:
+    post:
+      tags:
+        - ENVIRONMENTS
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: ENVIRONMENTS.replaceOrCreate__post_ENVIRONMENTS_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/ENVIRONMENTS'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+  /ENVIRONMENTS/upsertWithWhere:
+    post:
+      tags:
+        - ENVIRONMENTS
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: ENVIRONMENTS.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/ENVIRONMENTS'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+  '/ENVIRONMENTS/{id}/exists':
+    get:
+      tags:
+        - ENVIRONMENTS
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'ENVIRONMENTS.exists__get_ENVIRONMENTS_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/ENVIRONMENTS/{id}':
+    head:
+      tags:
+        - ENVIRONMENTS
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'ENVIRONMENTS.exists__head_ENVIRONMENTS_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - ENVIRONMENTS
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: ENVIRONMENTS.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+    put:
+      tags:
+        - ENVIRONMENTS
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'ENVIRONMENTS.replaceById__put_ENVIRONMENTS_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/ENVIRONMENTS'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+    delete:
+      tags:
+        - ENVIRONMENTS
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: ENVIRONMENTS.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - ENVIRONMENTS
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: ENVIRONMENTS.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/ENVIRONMENTS'
+        - name: id
+          in: path
+          description: ENVIRONMENTS id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+  '/ENVIRONMENTS/{id}/replace':
+    post:
+      tags:
+        - ENVIRONMENTS
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'ENVIRONMENTS.replaceById__post_ENVIRONMENTS_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/ENVIRONMENTS'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+  /ENVIRONMENTS/findOne:
+    get:
+      tags:
+        - ENVIRONMENTS
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: ENVIRONMENTS.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/ENVIRONMENTS'
+      deprecated: false
+  /ENVIRONMENTS/update:
+    post:
+      tags:
+        - ENVIRONMENTS
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: ENVIRONMENTS.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/ENVIRONMENTS'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /ENVIRONMENTS/count:
+    get:
+      tags:
+        - ENVIRONMENTS
+      summary: Count instances of the model matched by where from the data source.
+      operationId: ENVIRONMENTS.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /oraF0911:
+    post:
+      tags:
+        - oraF0911
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: oraF0911.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+    patch:
+      tags:
+        - oraF0911
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: oraF0911.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+    put:
+      tags:
+        - oraF0911
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: oraF0911.replaceOrCreate__put_oraF0911
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+    get:
+      tags:
+        - oraF0911
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: oraF0911.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/oraF0911'
+      deprecated: false
+  /oraF0911/replaceOrCreate:
+    post:
+      tags:
+        - oraF0911
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: oraF0911.replaceOrCreate__post_oraF0911_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+  /oraF0911/upsertWithWhere:
+    post:
+      tags:
+        - oraF0911
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: oraF0911.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/oraF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+  '/oraF0911/{id}/exists':
+    get:
+      tags:
+        - oraF0911
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'oraF0911.exists__get_oraF0911_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/oraF0911/{id}':
+    head:
+      tags:
+        - oraF0911
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'oraF0911.exists__head_oraF0911_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - oraF0911
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: oraF0911.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+    put:
+      tags:
+        - oraF0911
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'oraF0911.replaceById__put_oraF0911_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+    delete:
+      tags:
+        - oraF0911
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: oraF0911.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - oraF0911
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: oraF0911.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/oraF0911'
+        - name: id
+          in: path
+          description: oraF0911 id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+  '/oraF0911/{id}/replace':
+    post:
+      tags:
+        - oraF0911
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'oraF0911.replaceById__post_oraF0911_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+  /oraF0911/findOne:
+    get:
+      tags:
+        - oraF0911
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: oraF0911.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraF0911'
+      deprecated: false
+  /oraF0911/update:
+    post:
+      tags:
+        - oraF0911
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: oraF0911.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/oraF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /oraF0911/count:
+    get:
+      tags:
+        - oraF0911
+      summary: Count instances of the model matched by where from the data source.
+      operationId: oraF0911.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /F4111:
+    post:
+      tags:
+        - F4111
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: F4111.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/F4111'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+    patch:
+      tags:
+        - F4111
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: F4111.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/F4111'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+    put:
+      tags:
+        - F4111
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: F4111.replaceOrCreate__put_F4111
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/F4111'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+    get:
+      tags:
+        - F4111
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: F4111.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/F4111'
+      deprecated: false
+  /F4111/replaceOrCreate:
+    post:
+      tags:
+        - F4111
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: F4111.replaceOrCreate__post_F4111_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/F4111'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+  /F4111/upsertWithWhere:
+    post:
+      tags:
+        - F4111
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: F4111.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/F4111'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+  '/F4111/{id}/exists':
+    get:
+      tags:
+        - F4111
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'F4111.exists__get_F4111_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/F4111/{id}':
+    head:
+      tags:
+        - F4111
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'F4111.exists__head_F4111_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - F4111
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: F4111.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+    put:
+      tags:
+        - F4111
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'F4111.replaceById__put_F4111_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/F4111'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+    delete:
+      tags:
+        - F4111
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: F4111.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - F4111
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: F4111.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/F4111'
+        - name: id
+          in: path
+          description: F4111 id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+  '/F4111/{id}/replace':
+    post:
+      tags:
+        - F4111
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'F4111.replaceById__post_F4111_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/F4111'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+  /F4111/findOne:
+    get:
+      tags:
+        - F4111
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: F4111.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/F4111'
+      deprecated: false
+  /F4111/update:
+    post:
+      tags:
+        - F4111
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: F4111.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/F4111'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /F4111/count:
+    get:
+      tags:
+        - F4111
+      summary: Count instances of the model matched by where from the data source.
+      operationId: F4111.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /PURGE_SET:
+    post:
+      tags:
+        - PURGE_SET
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: PURGE_SET.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_SET'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+    patch:
+      tags:
+        - PURGE_SET
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: PURGE_SET.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_SET'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+    put:
+      tags:
+        - PURGE_SET
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: PURGE_SET.replaceOrCreate__put_PURGE_SET
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_SET'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+    get:
+      tags:
+        - PURGE_SET
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: PURGE_SET.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+  /PURGE_SET/replaceOrCreate:
+    post:
+      tags:
+        - PURGE_SET
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: PURGE_SET.replaceOrCreate__post_PURGE_SET_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_SET'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+  /PURGE_SET/upsertWithWhere:
+    post:
+      tags:
+        - PURGE_SET
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: PURGE_SET.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PURGE_SET'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+  '/PURGE_SET/{id}/exists':
+    get:
+      tags:
+        - PURGE_SET
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'PURGE_SET.exists__get_PURGE_SET_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/PURGE_SET/{id}':
+    head:
+      tags:
+        - PURGE_SET
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'PURGE_SET.exists__head_PURGE_SET_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - PURGE_SET
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: PURGE_SET.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+    put:
+      tags:
+        - PURGE_SET
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'PURGE_SET.replaceById__put_PURGE_SET_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_SET'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+    delete:
+      tags:
+        - PURGE_SET
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: PURGE_SET.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - PURGE_SET
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: PURGE_SET.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PURGE_SET'
+        - name: id
+          in: path
+          description: PURGE_SET id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+  '/PURGE_SET/{id}/replace':
+    post:
+      tags:
+        - PURGE_SET
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'PURGE_SET.replaceById__post_PURGE_SET_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_SET'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+  /PURGE_SET/findOne:
+    get:
+      tags:
+        - PURGE_SET
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: PURGE_SET.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_SET'
+      deprecated: false
+  /PURGE_SET/update:
+    post:
+      tags:
+        - PURGE_SET
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: PURGE_SET.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PURGE_SET'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /PURGE_SET/count:
+    get:
+      tags:
+        - PURGE_SET
+      summary: Count instances of the model matched by where from the data source.
+      operationId: PURGE_SET.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /PURGE_MODULE:
+    post:
+      tags:
+        - PURGE_MODULE
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: PURGE_MODULE.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_MODULE'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+    patch:
+      tags:
+        - PURGE_MODULE
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: PURGE_MODULE.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_MODULE'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+    put:
+      tags:
+        - PURGE_MODULE
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: PURGE_MODULE.replaceOrCreate__put_PURGE_MODULE
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_MODULE'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+    get:
+      tags:
+        - PURGE_MODULE
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: PURGE_MODULE.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+  /PURGE_MODULE/replaceOrCreate:
+    post:
+      tags:
+        - PURGE_MODULE
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: PURGE_MODULE.replaceOrCreate__post_PURGE_MODULE_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_MODULE'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+  /PURGE_MODULE/upsertWithWhere:
+    post:
+      tags:
+        - PURGE_MODULE
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: PURGE_MODULE.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PURGE_MODULE'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+  '/PURGE_MODULE/{id}/exists':
+    get:
+      tags:
+        - PURGE_MODULE
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'PURGE_MODULE.exists__get_PURGE_MODULE_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/PURGE_MODULE/{id}':
+    head:
+      tags:
+        - PURGE_MODULE
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'PURGE_MODULE.exists__head_PURGE_MODULE_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - PURGE_MODULE
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: PURGE_MODULE.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+    put:
+      tags:
+        - PURGE_MODULE
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'PURGE_MODULE.replaceById__put_PURGE_MODULE_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_MODULE'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+    delete:
+      tags:
+        - PURGE_MODULE
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: PURGE_MODULE.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - PURGE_MODULE
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: PURGE_MODULE.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PURGE_MODULE'
+        - name: id
+          in: path
+          description: PURGE_MODULE id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+  '/PURGE_MODULE/{id}/replace':
+    post:
+      tags:
+        - PURGE_MODULE
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'PURGE_MODULE.replaceById__post_PURGE_MODULE_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/PURGE_MODULE'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+  /PURGE_MODULE/findOne:
+    get:
+      tags:
+        - PURGE_MODULE
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: PURGE_MODULE.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/PURGE_MODULE'
+      deprecated: false
+  /PURGE_MODULE/update:
+    post:
+      tags:
+        - PURGE_MODULE
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: PURGE_MODULE.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/PURGE_MODULE'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /PURGE_MODULE/count:
+    get:
+      tags:
+        - PURGE_MODULE
+      summary: Count instances of the model matched by where from the data source.
+      operationId: PURGE_MODULE.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /msF0911:
+    post:
+      tags:
+        - msF0911
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: msF0911.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/msF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+    patch:
+      tags:
+        - msF0911
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: msF0911.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/msF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+    put:
+      tags:
+        - msF0911
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: msF0911.replaceOrCreate__put_msF0911
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/msF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+    get:
+      tags:
+        - msF0911
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: msF0911.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/msF0911'
+      deprecated: false
+  /msF0911/replaceOrCreate:
+    post:
+      tags:
+        - msF0911
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: msF0911.replaceOrCreate__post_msF0911_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/msF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+  /msF0911/upsertWithWhere:
+    post:
+      tags:
+        - msF0911
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: msF0911.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/msF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+  '/msF0911/{id}/exists':
+    get:
+      tags:
+        - msF0911
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'msF0911.exists__get_msF0911_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/msF0911/{id}':
+    head:
+      tags:
+        - msF0911
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'msF0911.exists__head_msF0911_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - msF0911
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: msF0911.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+    put:
+      tags:
+        - msF0911
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'msF0911.replaceById__put_msF0911_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/msF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+    delete:
+      tags:
+        - msF0911
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: msF0911.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - msF0911
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: msF0911.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/msF0911'
+        - name: id
+          in: path
+          description: msF0911 id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+  '/msF0911/{id}/replace':
+    post:
+      tags:
+        - msF0911
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'msF0911.replaceById__post_msF0911_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/msF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+  /msF0911/findOne:
+    get:
+      tags:
+        - msF0911
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: msF0911.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/msF0911'
+      deprecated: false
+  /msF0911/update:
+    post:
+      tags:
+        - msF0911
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: msF0911.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/msF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /msF0911/count:
+    get:
+      tags:
+        - msF0911
+      summary: Count instances of the model matched by where from the data source.
+      operationId: msF0911.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /ARCENG_CFG:
+    post:
+      tags:
+        - oraARCENG_CFG
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: oraARCENG_CFG.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraARCENG_CFG'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+    patch:
+      tags:
+        - oraARCENG_CFG
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: oraARCENG_CFG.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraARCENG_CFG'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+    put:
+      tags:
+        - oraARCENG_CFG
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: oraARCENG_CFG.replaceOrCreate__put_ARCENG_CFG
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraARCENG_CFG'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+    get:
+      tags:
+        - oraARCENG_CFG
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: oraARCENG_CFG.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+  /ARCENG_CFG/replaceOrCreate:
+    post:
+      tags:
+        - oraARCENG_CFG
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: oraARCENG_CFG.replaceOrCreate__post_ARCENG_CFG_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraARCENG_CFG'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+  /ARCENG_CFG/upsertWithWhere:
+    post:
+      tags:
+        - oraARCENG_CFG
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: oraARCENG_CFG.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/oraARCENG_CFG'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+  '/ARCENG_CFG/{id}/exists':
+    get:
+      tags:
+        - oraARCENG_CFG
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'oraARCENG_CFG.exists__get_ARCENG_CFG_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/ARCENG_CFG/{id}':
+    head:
+      tags:
+        - oraARCENG_CFG
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'oraARCENG_CFG.exists__head_ARCENG_CFG_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - oraARCENG_CFG
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: oraARCENG_CFG.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+    put:
+      tags:
+        - oraARCENG_CFG
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'oraARCENG_CFG.replaceById__put_ARCENG_CFG_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraARCENG_CFG'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+    delete:
+      tags:
+        - oraARCENG_CFG
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: oraARCENG_CFG.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - oraARCENG_CFG
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: oraARCENG_CFG.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/oraARCENG_CFG'
+        - name: id
+          in: path
+          description: oraARCENG_CFG id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+  '/ARCENG_CFG/{id}/replace':
+    post:
+      tags:
+        - oraARCENG_CFG
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'oraARCENG_CFG.replaceById__post_ARCENG_CFG_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/oraARCENG_CFG'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+  /ARCENG_CFG/findOne:
+    get:
+      tags:
+        - oraARCENG_CFG
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: oraARCENG_CFG.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/oraARCENG_CFG'
+      deprecated: false
+  /ARCENG_CFG/update:
+    post:
+      tags:
+        - oraARCENG_CFG
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: oraARCENG_CFG.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/oraARCENG_CFG'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /ARCENG_CFG/count:
+    get:
+      tags:
+        - oraARCENG_CFG
+      summary: Count instances of the model matched by where from the data source.
+      operationId: oraARCENG_CFG.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /mststF0911:
+    post:
+      tags:
+        - mststF0911
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: mststF0911.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mststF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+    patch:
+      tags:
+        - mststF0911
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: mststF0911.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mststF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+    put:
+      tags:
+        - mststF0911
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: mststF0911.replaceOrCreate__put_mststF0911
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mststF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+    get:
+      tags:
+        - mststF0911
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: mststF0911.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/mststF0911'
+      deprecated: false
+  /mststF0911/replaceOrCreate:
+    post:
+      tags:
+        - mststF0911
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: mststF0911.replaceOrCreate__post_mststF0911_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mststF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+  /mststF0911/upsertWithWhere:
+    post:
+      tags:
+        - mststF0911
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: mststF0911.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/mststF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+  '/mststF0911/{id}/exists':
+    get:
+      tags:
+        - mststF0911
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'mststF0911.exists__get_mststF0911_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/mststF0911/{id}':
+    head:
+      tags:
+        - mststF0911
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'mststF0911.exists__head_mststF0911_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - mststF0911
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: mststF0911.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+    put:
+      tags:
+        - mststF0911
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'mststF0911.replaceById__put_mststF0911_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mststF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+    delete:
+      tags:
+        - mststF0911
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: mststF0911.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - mststF0911
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: mststF0911.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/mststF0911'
+        - name: id
+          in: path
+          description: mststF0911 id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+  '/mststF0911/{id}/replace':
+    post:
+      tags:
+        - mststF0911
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'mststF0911.replaceById__post_mststF0911_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mststF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+  /mststF0911/findOne:
+    get:
+      tags:
+        - mststF0911
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: mststF0911.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mststF0911'
+      deprecated: false
+  /mststF0911/update:
+    post:
+      tags:
+        - mststF0911
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: mststF0911.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/mststF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /mststF0911/count:
+    get:
+      tags:
+        - mststF0911
+      summary: Count instances of the model matched by where from the data source.
+      operationId: mststF0911.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+  /mongoF0911:
+    post:
+      tags:
+        - mongoF0911
+      summary: Create a new instance of the model and persist it into the data source.
+      operationId: mongoF0911.create
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mongoF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+    patch:
+      tags:
+        - mongoF0911
+      summary: Patch an existing model instance or insert a new one into the data source.
+      operationId: mongoF0911.patchOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mongoF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+    put:
+      tags:
+        - mongoF0911
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: mongoF0911.replaceOrCreate__put_mongoF0911
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mongoF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+    get:
+      tags:
+        - mongoF0911
+      summary: Find all instances of the model matched by filter from the data source.
+      operationId: mongoF0911.find
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/mongoF0911'
+      deprecated: false
+  /mongoF0911/replaceOrCreate:
+    post:
+      tags:
+        - mongoF0911
+      summary: Replace an existing model instance or insert a new one into the data source.
+      operationId: mongoF0911.replaceOrCreate__post_mongoF0911_replaceOrCreate
+      parameters:
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mongoF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+  /mongoF0911/upsertWithWhere:
+    post:
+      tags:
+        - mongoF0911
+      summary: Update an existing model instance or insert a new one into the data source based on the where criteria.
+      operationId: mongoF0911.upsertWithWhere
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/mongoF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+  '/mongoF0911/{id}/exists':
+    get:
+      tags:
+        - mongoF0911
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'mongoF0911.exists__get_mongoF0911_{id}_exists'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+  '/mongoF0911/{id}':
+    head:
+      tags:
+        - mongoF0911
+      summary: Check whether a model instance exists in the data source.
+      operationId: 'mongoF0911.exists__head_mongoF0911_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              exists:
+                type: boolean
+      deprecated: false
+    get:
+      tags:
+        - mongoF0911
+      summary: 'Find a model instance by {{id}} from the data source.'
+      operationId: mongoF0911.findById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: filter
+          in: query
+          description: 'Filter defining fields and include - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+    put:
+      tags:
+        - mongoF0911
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'mongoF0911.replaceById__put_mongoF0911_{id}'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mongoF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+    delete:
+      tags:
+        - mongoF0911
+      summary: 'Delete a model instance by {{id}} from the data source.'
+      operationId: mongoF0911.deleteById
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+      deprecated: false
+    patch:
+      tags:
+        - mongoF0911
+      summary: Patch attributes for a model instance and persist it into the data source.
+      operationId: mongoF0911.prototype.patchAttributes
+      parameters:
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/mongoF0911'
+        - name: id
+          in: path
+          description: mongoF0911 id
+          required: true
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+  '/mongoF0911/{id}/replace':
+    post:
+      tags:
+        - mongoF0911
+      summary: Replace attributes for a model instance and persist it into the data source.
+      operationId: 'mongoF0911.replaceById__post_mongoF0911_{id}_replace'
+      parameters:
+        - name: id
+          in: path
+          description: Model id
+          required: true
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: Model instance data
+          required: false
+          schema:
+            description: Model instance data
+            $ref: '#/definitions/mongoF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+  /mongoF0911/findOne:
+    get:
+      tags:
+        - mongoF0911
+      summary: Find first instance of the model matched by filter from the data source.
+      operationId: mongoF0911.findOne
+      parameters:
+        - name: filter
+          in: query
+          description: 'Filter defining fields, where, include, order, offset, and limit - must be a JSON-encoded string ({"something":"value"})'
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            $ref: '#/definitions/mongoF0911'
+      deprecated: false
+  /mongoF0911/update:
+    post:
+      tags:
+        - mongoF0911
+      summary: 'Update instances of the model matched by {{where}} from the data source.'
+      operationId: mongoF0911.updateAll
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+        - name: data
+          in: body
+          description: An object of model property name/value pairs
+          required: false
+          schema:
+            description: An object of model property name/value pairs
+            $ref: '#/definitions/mongoF0911'
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            description: Information related to the outcome of the operation
+            type: object
+            properties:
+              count:
+                description: The number of instances updated
+                type: number
+                format: double
+      deprecated: false
+  /mongoF0911/count:
+    get:
+      tags:
+        - mongoF0911
+      summary: Count instances of the model matched by where from the data source.
+      operationId: mongoF0911.count
+      parameters:
+        - name: where
+          in: query
+          description: Criteria to match model instances
+          required: false
+          type: string
+          format: JSON
+      responses:
+        '200':
+          description: Request was successful
+          schema:
+            type: object
+            properties:
+              count:
+                type: number
+                format: double
+      deprecated: false
+definitions:
+  x-any:
+    properties: {}
+  AccessToken:
+    properties:
+      id:
+        type: string
+      ttl:
+        default: 1209600
+        description: time to live in seconds (2 weeks by default)
+        type: number
+        format: double
+      scopes:
+        description: Array of scopes granted to this access token.
+        type: array
+        items:
+          type: string
+      created:
+        type: string
+        format: date-time
+      userId:
+        type: number
+        format: double
+    required:
+      - id
+    additionalProperties: false
+  User:
+    properties:
+      realm:
+        type: string
+      username:
+        type: string
+      email:
+        type: string
+      emailVerified:
+        type: boolean
+      id:
+        type: number
+        format: double
+    required:
+      - email
+    additionalProperties: false
+  ENVIRONMENTS:
+    properties:
+      ID:
+        maxLength: 22
+        type: number
+        format: double
+      READONLY:
+        maxLength: 1
+        type: string
+      NAME:
+        maxLength: 20
+        type: string
+      DESCRIPTION:
+        maxLength: 100
+        type: string
+    required:
+      - ID
+      - READONLY
+      - NAME
+      - DESCRIPTION
+    additionalProperties: false
+  oraF0911:
+    properties:
+      GLDCTO:
+        maxLength: 4
+        type: string
+      GLLNID:
+        maxLength: 22
+        type: number
+        format: double
+      GLWY:
+        maxLength: 22
+        type: number
+        format: double
+      GLWN:
+        maxLength: 22
+        type: number
+        format: double
+      GLFNLP:
+        maxLength: 2
+        type: string
+      GLOPSQ:
+        maxLength: 22
+        type: number
+        format: double
+      GLJBCD:
+        maxLength: 12
+        type: string
+      GLJBST:
+        maxLength: 8
+        type: string
+      GLHMCU:
+        maxLength: 24
+        type: string
+      GLDOI:
+        maxLength: 22
+        type: number
+        format: double
+      GLALID:
+        maxLength: 50
+        type: string
+      GLALTY:
+        maxLength: 4
+        type: string
+      GLDSVJ:
+        maxLength: 22
+        type: number
+        format: double
+      GLTORG:
+        maxLength: 20
+        type: string
+      'GLREG#':
+        maxLength: 22
+        type: number
+        format: double
+      GLPYID:
+        maxLength: 22
+        type: number
+        format: double
+      GLUSER:
+        maxLength: 20
+        type: string
+      GLPID:
+        maxLength: 20
+        type: string
+      GLJOBN:
+        maxLength: 20
+        type: string
+      GLUPMJ:
+        maxLength: 22
+        type: number
+        format: double
+      GLUPMT:
+        maxLength: 22
+        type: number
+        format: double
+      GLABR1:
+        maxLength: 24
+        type: string
+      GLABR2:
+        maxLength: 24
+        type: string
+      GLABR3:
+        maxLength: 24
+        type: string
+      GLABR4:
+        maxLength: 24
+        type: string
+      GLABT1:
+        maxLength: 2
+        type: string
+      GLABT2:
+        maxLength: 2
+        type: string
+      GLABT3:
+        maxLength: 2
+        type: string
+      GLABT4:
+        maxLength: 2
+        type: string
+      GLITM:
+        maxLength: 22
+        type: number
+        format: double
+      GLPM01:
+        maxLength: 2
+        type: string
+      GLPM02:
+        maxLength: 2
+        type: string
+      GLPM03:
+        maxLength: 2
+        type: string
+      GLPM04:
+        maxLength: 2
+        type: string
+      GLPM05:
+        maxLength: 2
+        type: string
+      GLPM06:
+        maxLength: 2
+        type: string
+      GLPM07:
+        maxLength: 2
+        type: string
+      GLPM08:
+        maxLength: 2
+        type: string
+      GLPM09:
+        maxLength: 2
+        type: string
+      GLPM10:
+        maxLength: 2
+        type: string
+      GLBCRC:
+        maxLength: 6
+        type: string
+      GLCRRM:
+        maxLength: 2
+        type: string
+      GLPRGF:
+        maxLength: 2
+        type: string
+      GLTXA1:
+        maxLength: 20
+        type: string
+      GLEXR1:
+        maxLength: 4
+        type: string
+      GLTXITM:
+        maxLength: 22
+        type: number
+        format: double
+      GLACTB:
+        maxLength: 20
+        type: string
+      GLGPF1:
+        maxLength: 2
+        type: string
+      GLACR:
+        maxLength: 22
+        type: number
+        format: double
+      GLDLNID:
+        maxLength: 22
+        type: number
+        format: double
+      GLCKNU:
+        maxLength: 50
+        type: string
+      GLBUPC:
+        maxLength: 2
+        type: string
+      GLAHBU:
+        maxLength: 24
+        type: string
+      GLEPGC:
+        maxLength: 6
+        type: string
+      GLJPGC:
+        maxLength: 6
+        type: string
+      GLRC5:
+        maxLength: 22
+        type: number
+        format: double
+      GLSFXE:
+        maxLength: 22
+        type: number
+        format: double
+      GLOFM:
+        maxLength: 2
+        type: string
+      GLKCO:
+        maxLength: 10
+        type: string
+      GLDCT:
+        maxLength: 4
+        type: string
+      GLDOC:
+        maxLength: 22
+        type: number
+        format: double
+      GLDGJ:
+        maxLength: 22
+        type: number
+        format: double
+      GLJELN:
+        maxLength: 22
+        type: number
+        format: double
+      GLEXTL:
+        maxLength: 4
+        type: string
+      GLPOST:
+        maxLength: 2
+        type: string
+      GLICU:
+        maxLength: 22
+        type: number
+        format: double
+      GLICUT:
+        maxLength: 4
+        type: string
+      GLDICJ:
+        maxLength: 22
+        type: number
+        format: double
+      GLDSYJ:
+        maxLength: 22
+        type: number
+        format: double
+      GLTICU:
+        maxLength: 22
+        type: number
+        format: double
+      GLCO:
+        maxLength: 10
+        type: string
+      GLANI:
+        maxLength: 58
+        type: string
+      GLAM:
+        maxLength: 2
+        type: string
+      GLAID:
+        maxLength: 16
+        type: string
+      GLMCU:
+        maxLength: 24
+        type: string
+      GLOBJ:
+        maxLength: 12
+        type: string
+      GLSUB:
+        maxLength: 16
+        type: string
+      GLSBL:
+        maxLength: 16
+        type: string
+      GLSBLT:
+        maxLength: 2
+        type: string
+      GLLT:
+        maxLength: 4
+        type: string
+      GLPN:
+        maxLength: 22
+        type: number
+        format: double
+      GLCTRY:
+        maxLength: 22
+        type: number
+        format: double
+      GLFY:
+        maxLength: 22
+        type: number
+        format: double
+      GLFQ:
+        maxLength: 8
+        type: string
+      GLCRCD:
+        maxLength: 6
+        type: string
+      GLCRR:
+        maxLength: 22
+        type: number
+        format: double
+      GLHCRR:
+        maxLength: 22
+        type: number
+        format: double
+      GLHDGJ:
+        maxLength: 22
+        type: number
+        format: double
+      GLAA:
+        maxLength: 22
+        type: number
+        format: double
+      GLU:
+        maxLength: 22
+        type: number
+        format: double
+      GLUM:
+        maxLength: 4
+        type: string
+      GLGLC:
+        maxLength: 8
+        type: string
+      GLRE:
+        maxLength: 2
+        type: string
+      GLEXA:
+        maxLength: 60
+        type: string
+      GLEXR:
+        maxLength: 60
+        type: string
+      GLR1:
+        maxLength: 16
+        type: string
+      GLR2:
+        maxLength: 16
+        type: string
+      GLR3:
+        maxLength: 16
+        type: string
+      GLSFX:
+        maxLength: 6
+        type: string
+      GLODOC:
+        maxLength: 22
+        type: number
+        format: double
+    required:
+      - GLKCO
+      - GLDCT
+      - GLDOC
+      - GLDGJ
+    additionalProperties: false
+  F4111:
+    properties:
+      ILDGL:
+        maxLength: 22
+        type: number
+        format: double
+      ILGLPT:
+        maxLength: 8
+        type: string
+      ILDCTO:
+        maxLength: 4
+        type: string
+      ILDOCO:
+        maxLength: 22
+        type: number
+        format: double
+      ILKCOO:
+        maxLength: 10
+        type: string
+      ILLNID:
+        maxLength: 22
+        type: number
+        format: double
+      ILIPCD:
+        maxLength: 2
+        type: string
+      ILTRDJ:
+        maxLength: 22
+        type: number
+        format: double
+      ILTRUM:
+        maxLength: 4
+        type: string
+      ILAN8:
+        maxLength: 22
+        type: number
+        format: double
+      ILTREX:
+        maxLength: 60
+        type: string
+      ILTREF:
+        maxLength: 16
+        type: string
+      ILRCD:
+        maxLength: 6
+        type: string
+      ILTRQT:
+        maxLength: 22
+        type: number
+        format: double
+      ILUNCS:
+        maxLength: 22
+        type: number
+        format: double
+      ILPAID:
+        maxLength: 22
+        type: number
+        format: double
+      ILTERM:
+        maxLength: 20
+        type: string
+      ILUKID:
+        maxLength: 22
+        type: number
+        format: double
+      ILTDAY:
+        maxLength: 22
+        type: number
+        format: double
+      ILUSER:
+        maxLength: 20
+        type: string
+      ILPID:
+        maxLength: 20
+        type: string
+      ILCRDJ:
+        maxLength: 22
+        type: number
+        format: double
+      ILAID:
+        maxLength: 16
+        type: string
+      ILASID:
+        maxLength: 50
+        type: string
+      ILMCUZ:
+        maxLength: 24
+        type: string
+      ILOBJ:
+        maxLength: 12
+        type: string
+      ILSBL:
+        maxLength: 16
+        type: string
+      ILSUB:
+        maxLength: 16
+        type: string
+      ILUOM2:
+        maxLength: 4
+        type: string
+      ILCMOO:
+        maxLength: 2
+        type: string
+      ILRE:
+        maxLength: 2
+        type: string
+      ILSBLT:
+        maxLength: 2
+        type: string
+      ILSQOR:
+        maxLength: 22
+        type: number
+        format: double
+      ILVPEJ:
+        maxLength: 22
+        type: number
+        format: double
+      ILHDGJ:
+        maxLength: 22
+        type: number
+        format: double
+      ILSHAN:
+        maxLength: 22
+        type: number
+        format: double
+      ILOPSQ:
+        maxLength: 22
+        type: number
+        format: double
+      ILRFLN:
+        maxLength: 22
+        type: number
+        format: double
+      ILTGN:
+        maxLength: 22
+        type: number
+        format: double
+      ILLOTC:
+        maxLength: 6
+        type: string
+      ILSVDT:
+        maxLength: 22
+        type: number
+        format: double
+      ILLRCD:
+        maxLength: 6
+        type: string
+      ILRLOT:
+        maxLength: 60
+        type: string
+      ILLPNU:
+        maxLength: 80
+        type: string
+      ILPMPN:
+        maxLength: 60
+        type: string
+      ILPNS:
+        maxLength: 22
+        type: number
+        format: double
+      ILNLIN:
+        maxLength: 22
+        type: number
+        format: double
+      ILITM:
+        maxLength: 22
+        type: number
+        format: double
+      ILLITM:
+        maxLength: 50
+        type: string
+      ILAITM:
+        maxLength: 50
+        type: string
+      ILMCU:
+        maxLength: 24
+        type: string
+      ILLOCN:
+        maxLength: 40
+        type: string
+      ILLOTN:
+        maxLength: 60
+        type: string
+      ILPLOT:
+        maxLength: 60
+        type: string
+      ILSTUN:
+        maxLength: 22
+        type: number
+        format: double
+      ILLDSQ:
+        maxLength: 22
+        type: number
+        format: double
+      ILTRNO:
+        maxLength: 22
+        type: number
+        format: double
+      ILFRTO:
+        maxLength: 2
+        type: string
+      ILLMCX:
+        maxLength: 2
+        type: string
+      ILLOTS:
+        maxLength: 2
+        type: string
+      ILLOTP:
+        maxLength: 22
+        type: number
+        format: double
+      ILLOTG:
+        maxLength: 6
+        type: string
+      ILKIT:
+        maxLength: 22
+        type: number
+        format: double
+      ILMMCU:
+        maxLength: 24
+        type: string
+      ILDMCT:
+        maxLength: 24
+        type: string
+      ILDMCS:
+        maxLength: 22
+        type: number
+        format: double
+      ILKCO:
+        maxLength: 10
+        type: string
+      ILDOC:
+        maxLength: 22
+        type: number
+        format: double
+      ILDCT:
+        maxLength: 4
+        type: string
+      ILSFX:
+        maxLength: 6
+        type: string
+      ILJELN:
+        maxLength: 22
+        type: number
+        format: double
+      ILICU:
+        maxLength: 22
+        type: number
+        format: double
+    required:
+      - ILUKID
+    additionalProperties: false
+  PURGE_SET:
+    properties:
+      ID:
+        maxLength: 22
+        type: number
+        format: double
+      TBL_NAME:
+        maxLength: 30
+        type: string
+      RANK:
+        maxLength: 22
+        type: number
+        format: double
+      PARENT_ID:
+        maxLength: 22
+        type: number
+        format: double
+      ULTIMATE_PARENT_ID:
+        maxLength: 22
+        type: number
+        format: double
+      JOIN_TEXT:
+        maxLength: 300
+        type: string
+      ACTIVE:
+        maxLength: 1
+        type: string
+      ARCHIVE:
+        maxLength: 1
+        type: string
+      PURGE_MASTER:
+        maxLength: 1
+        type: string
+      MODULE_ID:
+        maxLength: 22
+        type: number
+        format: double
+      PURGE:
+        maxLength: 1
+        type: string
+      ARCHIVE_CTRL:
+        maxLength: 10
+        type: string
+      DISTINCT_CTRL:
+        maxLength: 2
+        type: string
+      DUPL_CTRL:
+        maxLength: 2
+        type: string
+      PURGE_CTRL:
+        maxLength: 1
+        type: string
+      JOIN_ALIAS:
+        maxLength: 1
+        type: string
+      JOIN_CRITERIA:
+        maxLength: 300
+        type: string
+      PURGE_HINT:
+        maxLength: 100
+        type: string
+      ENV_ID:
+        maxLength: 22
+        type: number
+        format: double
+      ARCHIVE_HINT:
+        maxLength: 100
+        type: string
+      ARCHIVE_THROTTLE:
+        maxLength: 22
+        type: number
+        format: double
+      PURGE_THROTTLE:
+        maxLength: 22
+        type: number
+        format: double
+      ARCHIVE_COUNT:
+        maxLength: 22
+        type: number
+        format: double
+      PURGE_COUNT:
+        maxLength: 22
+        type: number
+        format: double
+      SOURCE_PK:
+        maxLength: 500
+        type: string
+      CONCURRENT_AP:
+        maxLength: 1
+        type: string
+    required:
+      - ID
+      - TBL_NAME
+      - RANK
+      - PARENT_ID
+      - ULTIMATE_PARENT_ID
+      - ACTIVE
+      - ARCHIVE
+      - PURGE_MASTER
+      - ENV_ID
+    additionalProperties: false
+  PURGE_MODULE:
+    properties:
+      MODULE_ID:
+        type: number
+        format: double
+      PURGE_MODULE:
+        maxLength: 20
+        type: string
+      DESCRIPTION:
+        maxLength: 100
+        type: string
+      REL_TYPE:
+        maxLength: 10
+        type: string
+      ACTIVE:
+        maxLength: 1
+        type: string
+      MODULE_GROUP:
+        maxLength: 20
+        type: string
+      SEQ_NUMBER:
+        type: number
+        format: double
+      POSITIVE_APPROACH:
+        maxLength: 10
+        type: string
+      SCENARIO_DRIVER:
+        type: number
+        format: double
+      SCENARIO_ARCHIVER:
+        type: number
+        format: double
+      SCENARIO_PURGE:
+        type: number
+        format: double
+      SP_INVER_STEP:
+        maxLength: 10
+        type: string
+      CREATE_INDEX:
+        maxLength: 10
+        type: string
+      REBATCH:
+        maxLength: 1
+        type: string
+      STATUS:
+        type: number
+        format: double
+      ENV_ID:
+        type: number
+        format: double
+      TOOL_ID:
+        type: number
+        format: double
+    required:
+      - MODULE_ID
+      - PURGE_MODULE
+      - REL_TYPE
+      - ACTIVE
+      - SCENARIO_DRIVER
+      - SCENARIO_ARCHIVER
+      - SCENARIO_PURGE
+      - ENV_ID
+      - TOOL_ID
+    additionalProperties: false
+  msF0911:
+    properties:
+      GLKCO:
+        maxLength: 5
+        type: string
+      GLDCT:
+        maxLength: 2
+        type: string
+      GLDOC:
+        type: number
+        format: double
+      GLDGJ:
+        type: number
+        format: double
+      GLJELN:
+        type: number
+        format: double
+      GLEXTL:
+        maxLength: 2
+        type: string
+      GLPOST:
+        maxLength: 1
+        type: string
+      GLICU:
+        type: number
+        format: double
+      GLICUT:
+        maxLength: 2
+        type: string
+      GLDICJ:
+        type: number
+        format: double
+      GLDSYJ:
+        type: number
+        format: double
+      GLTICU:
+        type: number
+        format: double
+      GLCO:
+        maxLength: 5
+        type: string
+      GLANI:
+        maxLength: 29
+        type: string
+      GLAM:
+        maxLength: 1
+        type: string
+      GLAID:
+        maxLength: 8
+        type: string
+      GLMCU:
+        maxLength: 12
+        type: string
+      GLOBJ:
+        maxLength: 6
+        type: string
+      GLSUB:
+        maxLength: 8
+        type: string
+      GLSBL:
+        maxLength: 8
+        type: string
+      GLSBLT:
+        maxLength: 1
+        type: string
+      GLLT:
+        maxLength: 2
+        type: string
+      GLPN:
+        type: number
+        format: double
+      GLCTRY:
+        type: number
+        format: double
+      GLFY:
+        type: number
+        format: double
+      GLFQ:
+        maxLength: 4
+        type: string
+      GLCRCD:
+        maxLength: 3
+        type: string
+      GLCRR:
+        type: number
+        format: double
+      GLHCRR:
+        type: number
+        format: double
+      GLHDGJ:
+        type: number
+        format: double
+      GLAA:
+        type: number
+        format: double
+      GLU:
+        type: number
+        format: double
+      GLUM:
+        maxLength: 2
+        type: string
+      GLGLC:
+        maxLength: 4
+        type: string
+      GLRE:
+        maxLength: 1
+        type: string
+      GLEXA:
+        maxLength: 30
+        type: string
+      GLEXR:
+        maxLength: 30
+        type: string
+      GLR1:
+        maxLength: 8
+        type: string
+      GLR2:
+        maxLength: 8
+        type: string
+      GLR3:
+        maxLength: 8
+        type: string
+      GLSFX:
+        maxLength: 3
+        type: string
+      GLODOC:
+        type: number
+        format: double
+      GLODCT:
+        maxLength: 2
+        type: string
+      GLOSFX:
+        maxLength: 3
+        type: string
+      GLPKCO:
+        maxLength: 5
+        type: string
+      GLOKCO:
+        maxLength: 5
+        type: string
+      GLPDCT:
+        maxLength: 2
+        type: string
+      GLAN8:
+        type: number
+        format: double
+      GLCN:
+        maxLength: 8
+        type: string
+      GLDKJ:
+        type: number
+        format: double
+      GLDKC:
+        type: number
+        format: double
+      GLASID:
+        maxLength: 25
+        type: string
+      GLBRE:
+        maxLength: 1
+        type: string
+      GLRCND:
+        maxLength: 1
+        type: string
+      GLSUMM:
+        maxLength: 1
+        type: string
+      GLPRGE:
+        maxLength: 1
+        type: string
+      GLTNN:
+        maxLength: 1
+        type: string
+      GLALT1:
+        maxLength: 1
+        type: string
+      GLALT2:
+        maxLength: 1
+        type: string
+      GLALT3:
+        maxLength: 1
+        type: string
+      GLALT4:
+        maxLength: 1
+        type: string
+      GLALT5:
+        maxLength: 1
+        type: string
+      GLALT6:
+        maxLength: 1
+        type: string
+      GLALT7:
+        maxLength: 1
+        type: string
+      GLALT8:
+        maxLength: 1
+        type: string
+      GLALT9:
+        maxLength: 1
+        type: string
+      GLALT0:
+        maxLength: 1
+        type: string
+      GLALTT:
+        maxLength: 1
+        type: string
+      GLALTU:
+        maxLength: 1
+        type: string
+      GLALTV:
+        maxLength: 1
+        type: string
+      GLALTW:
+        maxLength: 1
+        type: string
+      GLALTX:
+        maxLength: 1
+        type: string
+      GLALTZ:
+        maxLength: 1
+        type: string
+      GLDLNA:
+        maxLength: 1
+        type: string
+      GLCFF1:
+        maxLength: 1
+        type: string
+      GLCFF2:
+        maxLength: 1
+        type: string
+      GLASM:
+        maxLength: 1
+        type: string
+      GLBC:
+        maxLength: 1
+        type: string
+      GLVINV:
+        maxLength: 25
+        type: string
+      GLIVD:
+        type: number
+        format: double
+      GLWR01:
+        maxLength: 4
+        type: string
+      GLPO:
+        maxLength: 8
+        type: string
+      GLPSFX:
+        maxLength: 3
+        type: string
+      GLDCTO:
+        maxLength: 2
+        type: string
+      GLLNID:
+        type: number
+        format: double
+      GLWY:
+        type: number
+        format: double
+      GLWN:
+        type: number
+        format: double
+      GLFNLP:
+        maxLength: 1
+        type: string
+      GLOPSQ:
+        type: number
+        format: double
+      GLJBCD:
+        maxLength: 6
+        type: string
+      GLJBST:
+        maxLength: 4
+        type: string
+      GLHMCU:
+        maxLength: 12
+        type: string
+      GLDOI:
+        type: number
+        format: double
+      GLALID:
+        maxLength: 25
+        type: string
+      GLALTY:
+        maxLength: 2
+        type: string
+      GLDSVJ:
+        type: number
+        format: double
+      GLTORG:
+        maxLength: 10
+        type: string
+      'GLREG#':
+        type: number
+        format: double
+      GLPYID:
+        type: number
+        format: double
+      GLUSER:
+        maxLength: 10
+        type: string
+      GLPID:
+        maxLength: 10
+        type: string
+      GLJOBN:
+        maxLength: 10
+        type: string
+      GLUPMJ:
+        type: number
+        format: double
+      GLUPMT:
+        type: number
+        format: double
+      GLABR1:
+        maxLength: 12
+        type: string
+      GLABR2:
+        maxLength: 12
+        type: string
+      GLABR3:
+        maxLength: 12
+        type: string
+      GLABR4:
+        maxLength: 12
+        type: string
+      GLABT1:
+        maxLength: 1
+        type: string
+      GLABT2:
+        maxLength: 1
+        type: string
+      GLABT3:
+        maxLength: 1
+        type: string
+      GLABT4:
+        maxLength: 1
+        type: string
+      GLITM:
+        type: number
+        format: double
+      GLPM01:
+        maxLength: 1
+        type: string
+      GLPM02:
+        maxLength: 1
+        type: string
+      GLPM03:
+        maxLength: 1
+        type: string
+      GLPM04:
+        maxLength: 1
+        type: string
+      GLPM05:
+        maxLength: 1
+        type: string
+      GLPM06:
+        maxLength: 1
+        type: string
+      GLPM07:
+        maxLength: 1
+        type: string
+      GLPM08:
+        maxLength: 1
+        type: string
+      GLPM09:
+        maxLength: 1
+        type: string
+      GLPM10:
+        maxLength: 1
+        type: string
+      GLBCRC:
+        maxLength: 3
+        type: string
+      GLCRRM:
+        maxLength: 1
+        type: string
+      GLPRGF:
+        maxLength: 1
+        type: string
+      GLTXA1:
+        maxLength: 10
+        type: string
+      GLEXR1:
+        maxLength: 2
+        type: string
+      GLTXITM:
+        type: number
+        format: double
+      GLACTB:
+        maxLength: 10
+        type: string
+      GLGPF1:
+        maxLength: 1
+        type: string
+      GLACR:
+        type: number
+        format: double
+      GLDLNID:
+        type: number
+        format: double
+      GLCKNU:
+        maxLength: 25
+        type: string
+      GLBUPC:
+        maxLength: 1
+        type: string
+      GLAHBU:
+        maxLength: 12
+        type: string
+      GLEPGC:
+        maxLength: 3
+        type: string
+      GLJPGC:
+        maxLength: 3
+        type: string
+      GLRC5:
+        type: number
+        format: double
+      GLSFXE:
+        type: number
+        format: double
+      GLOFM:
+        maxLength: 1
+        type: string
+    required:
+      - GLKCO
+      - GLDCT
+      - GLDOC
+      - GLDGJ
+      - GLJELN
+      - GLEXTL
+      - GLLT
+    additionalProperties: false
+  oraARCENG_CFG:
+    properties:
+      id:
+        type: number
+        format: double
+    additionalProperties: false
+  mststF0911:
+    properties:
+      GLKCO:
+        maxLength: 5
+        type: string
+      GLDCT:
+        maxLength: 2
+        type: string
+      GLDOC:
+        type: number
+        format: double
+      GLDGJ:
+        type: number
+        format: double
+      GLJELN:
+        type: number
+        format: double
+      GLEXTL:
+        maxLength: 2
+        type: string
+      GLPOST:
+        maxLength: 1
+        type: string
+      GLICU:
+        type: number
+        format: double
+      GLICUT:
+        maxLength: 2
+        type: string
+      GLDICJ:
+        type: number
+        format: double
+      GLDSYJ:
+        type: number
+        format: double
+      GLTICU:
+        type: number
+        format: double
+      GLCO:
+        maxLength: 5
+        type: string
+      GLANI:
+        maxLength: 29
+        type: string
+      GLAM:
+        maxLength: 1
+        type: string
+      GLAID:
+        maxLength: 8
+        type: string
+      GLMCU:
+        maxLength: 12
+        type: string
+      GLOBJ:
+        maxLength: 6
+        type: string
+      GLSUB:
+        maxLength: 8
+        type: string
+      GLSBL:
+        maxLength: 8
+        type: string
+      GLSBLT:
+        maxLength: 1
+        type: string
+      GLLT:
+        maxLength: 2
+        type: string
+      GLPN:
+        type: number
+        format: double
+      GLCTRY:
+        type: number
+        format: double
+      GLFY:
+        type: number
+        format: double
+      GLFQ:
+        maxLength: 4
+        type: string
+      GLCRCD:
+        maxLength: 3
+        type: string
+      GLCRR:
+        type: number
+        format: double
+      GLHCRR:
+        type: number
+        format: double
+      GLHDGJ:
+        type: number
+        format: double
+      GLAA:
+        type: number
+        format: double
+      GLU:
+        type: number
+        format: double
+      GLUM:
+        maxLength: 2
+        type: string
+      GLGLC:
+        maxLength: 4
+        type: string
+      GLRE:
+        maxLength: 1
+        type: string
+      GLEXA:
+        maxLength: 30
+        type: string
+      GLEXR:
+        maxLength: 30
+        type: string
+      GLR1:
+        maxLength: 8
+        type: string
+      GLR2:
+        maxLength: 8
+        type: string
+      GLR3:
+        maxLength: 8
+        type: string
+      GLSFX:
+        maxLength: 3
+        type: string
+      GLODOC:
+        type: number
+        format: double
+      GLODCT:
+        maxLength: 2
+        type: string
+      GLOSFX:
+        maxLength: 3
+        type: string
+      GLPKCO:
+        maxLength: 5
+        type: string
+      GLOKCO:
+        maxLength: 5
+        type: string
+      GLPDCT:
+        maxLength: 2
+        type: string
+      GLAN8:
+        type: number
+        format: double
+      GLCN:
+        maxLength: 8
+        type: string
+      GLDKJ:
+        type: number
+        format: double
+      GLDKC:
+        type: number
+        format: double
+      GLASID:
+        maxLength: 25
+        type: string
+      GLBRE:
+        maxLength: 1
+        type: string
+      GLRCND:
+        maxLength: 1
+        type: string
+      GLSUMM:
+        maxLength: 1
+        type: string
+      GLPRGE:
+        maxLength: 1
+        type: string
+      GLTNN:
+        maxLength: 1
+        type: string
+      GLALT1:
+        maxLength: 1
+        type: string
+      GLALT2:
+        maxLength: 1
+        type: string
+      GLALT3:
+        maxLength: 1
+        type: string
+      GLALT4:
+        maxLength: 1
+        type: string
+      GLALT5:
+        maxLength: 1
+        type: string
+      GLALT6:
+        maxLength: 1
+        type: string
+      GLALT7:
+        maxLength: 1
+        type: string
+      GLALT8:
+        maxLength: 1
+        type: string
+      GLALT9:
+        maxLength: 1
+        type: string
+      GLALT0:
+        maxLength: 1
+        type: string
+      GLALTT:
+        maxLength: 1
+        type: string
+      GLALTU:
+        maxLength: 1
+        type: string
+      GLALTV:
+        maxLength: 1
+        type: string
+      GLALTW:
+        maxLength: 1
+        type: string
+      GLALTX:
+        maxLength: 1
+        type: string
+      GLALTZ:
+        maxLength: 1
+        type: string
+      GLDLNA:
+        maxLength: 1
+        type: string
+      GLCFF1:
+        maxLength: 1
+        type: string
+      GLCFF2:
+        maxLength: 1
+        type: string
+      GLASM:
+        maxLength: 1
+        type: string
+      GLBC:
+        maxLength: 1
+        type: string
+      GLVINV:
+        maxLength: 25
+        type: string
+      GLIVD:
+        type: number
+        format: double
+      GLWR01:
+        maxLength: 4
+        type: string
+      GLPO:
+        maxLength: 8
+        type: string
+      GLPSFX:
+        maxLength: 3
+        type: string
+      GLDCTO:
+        maxLength: 2
+        type: string
+      GLLNID:
+        type: number
+        format: double
+      GLWY:
+        type: number
+        format: double
+      GLWN:
+        type: number
+        format: double
+      GLFNLP:
+        maxLength: 1
+        type: string
+      GLOPSQ:
+        type: number
+        format: double
+      GLJBCD:
+        maxLength: 6
+        type: string
+      GLJBST:
+        maxLength: 4
+        type: string
+      GLHMCU:
+        maxLength: 12
+        type: string
+      GLDOI:
+        type: number
+        format: double
+      GLALID:
+        maxLength: 25
+        type: string
+      GLALTY:
+        maxLength: 2
+        type: string
+      GLDSVJ:
+        type: number
+        format: double
+      GLTORG:
+        maxLength: 10
+        type: string
+      'GLREG#':
+        type: number
+        format: double
+      GLPYID:
+        type: number
+        format: double
+      GLUSER:
+        maxLength: 10
+        type: string
+      GLPID:
+        maxLength: 10
+        type: string
+      GLJOBN:
+        maxLength: 10
+        type: string
+      GLUPMJ:
+        type: number
+        format: double
+      GLUPMT:
+        type: number
+        format: double
+      GLABR1:
+        maxLength: 12
+        type: string
+      GLABR2:
+        maxLength: 12
+        type: string
+      GLABR3:
+        maxLength: 12
+        type: string
+      GLABR4:
+        maxLength: 12
+        type: string
+      GLABT1:
+        maxLength: 1
+        type: string
+      GLABT2:
+        maxLength: 1
+        type: string
+      GLABT3:
+        maxLength: 1
+        type: string
+      GLABT4:
+        maxLength: 1
+        type: string
+      GLITM:
+        type: number
+        format: double
+      GLPM01:
+        maxLength: 1
+        type: string
+      GLPM02:
+        maxLength: 1
+        type: string
+      GLPM03:
+        maxLength: 1
+        type: string
+      GLPM04:
+        maxLength: 1
+        type: string
+      GLPM05:
+        maxLength: 1
+        type: string
+      GLPM06:
+        maxLength: 1
+        type: string
+      GLPM07:
+        maxLength: 1
+        type: string
+      GLPM08:
+        maxLength: 1
+        type: string
+      GLPM09:
+        maxLength: 1
+        type: string
+      GLPM10:
+        maxLength: 1
+        type: string
+      GLBCRC:
+        maxLength: 3
+        type: string
+      GLCRRM:
+        maxLength: 1
+        type: string
+      GLPRGF:
+        maxLength: 1
+        type: string
+      GLTXA1:
+        maxLength: 10
+        type: string
+      GLEXR1:
+        maxLength: 2
+        type: string
+      GLTXITM:
+        type: number
+        format: double
+      GLACTB:
+        maxLength: 10
+        type: string
+      GLGPF1:
+        maxLength: 1
+        type: string
+      GLACR:
+        type: number
+        format: double
+      GLDLNID:
+        type: number
+        format: double
+      GLCKNU:
+        maxLength: 25
+        type: string
+      GLBUPC:
+        maxLength: 1
+        type: string
+      GLAHBU:
+        maxLength: 12
+        type: string
+      GLEPGC:
+        maxLength: 3
+        type: string
+      GLJPGC:
+        maxLength: 3
+        type: string
+      GLRC5:
+        type: number
+        format: double
+      GLSFXE:
+        type: number
+        format: double
+      GLOFM:
+        maxLength: 1
+        type: string
+    required:
+      - GLKCO
+      - GLDCT
+      - GLDOC
+      - GLDGJ
+      - GLJELN
+      - GLEXTL
+      - GLLT
+    additionalProperties: false
+  mongoF0911:
+    properties:
+      GLKCO:
+        type: string
+    required:
+      - GLKCO
+    additionalProperties: false
+basePath: /api
+swagger: '2.0'
+info:
+  x-ibm-name: simpleloopback
+  version: 1.0.0
+  title: simpleLoopback
+schemes:
+  - https
+host: $(catalog.host)
+consumes:
+  - application/json
+produces:
+  - application/json
+securityDefinitions:
+  clientIdHeader:
+    type: apiKey
+    in: header
+    name: X-IBM-Client-Id
+  clientSecretHeader:
+    in: header
+    name: X-IBM-Client-Secret
+    type: apiKey
+security:
+  - clientIdHeader: []
+    clientSecretHeader: []
+x-ibm-configuration:
+  testable: true
+  enforced: true
+  cors:
+    enabled: true
+  catalogs:
+    apic-dev:
+      properties:
+        runtime-url: $(TARGET_URL)
+    sb:
+      properties:
+        runtime-url: 'http://localhost:4001'
+  assembly:
+    execute:
+      - invoke:
+          target-url: $(runtime-url)$(request.path)$(request.search)

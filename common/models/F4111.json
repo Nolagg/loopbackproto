@@ -1,0 +1,1098 @@
+{
+  "name": "F4111",
+  "options": {
+    "idInjection": false,
+    "plural": "F4111",
+    "oracle": {
+      "schema": "JDEDATA910",
+      "table": "F4111"
+    }
+  },
+  "properties": {
+    "ILDGL": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "ILDGL",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "ILGLPT": {
+      "type": "String",
+      "required": false,
+      "length": 8,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILGLPT",
+        "dataType": "NCHAR",
+        "dataLength": 8,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILDCTO": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILDCTO",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILDOCO": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILDOCO",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILKCOO": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILKCOO",
+        "dataType": "NCHAR",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLNID": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLNID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILIPCD": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILIPCD",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILTRDJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "ILTRDJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "ILTRUM": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILTRUM",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILAN8": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILAN8",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILTREX": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILTREX",
+        "dataType": "NCHAR",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILTREF": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILTREF",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILRCD": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILRCD",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILTRQT": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILTRQT",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILUNCS": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILUNCS",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILPAID": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILPAID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILTERM": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILTERM",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILUKID": {
+      "type": "Number",
+      "id": 1,
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILUKID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILTDAY": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILTDAY",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILUSER": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILUSER",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILPID": {
+      "type": "String",
+      "required": false,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILPID",
+        "dataType": "NCHAR",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILCRDJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "ILCRDJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "ILAID": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILAID",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILASID": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILASID",
+        "dataType": "NCHAR",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILMCUZ": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILMCUZ",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILOBJ": {
+      "type": "String",
+      "required": false,
+      "length": 12,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILOBJ",
+        "dataType": "NCHAR",
+        "dataLength": 12,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILSBL": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILSBL",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILSUB": {
+      "type": "String",
+      "required": false,
+      "length": 16,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILSUB",
+        "dataType": "NCHAR",
+        "dataLength": 16,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILUOM2": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILUOM2",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILCMOO": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILCMOO",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILRE": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILRE",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILSBLT": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILSBLT",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILSQOR": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILSQOR",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILVPEJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "ILVPEJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "ILHDGJ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "ILHDGJ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "ILSHAN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILSHAN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILOPSQ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILOPSQ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILRFLN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILRFLN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILTGN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILTGN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLOTC": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLOTC",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILSVDT": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": 6,
+      "scale": 0,
+      "oracle": {
+        "columnName": "ILSVDT",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": 6,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "ILLRCD": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLRCD",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILRLOT": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILRLOT",
+        "dataType": "NCHAR",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLPNU": {
+      "type": "String",
+      "required": false,
+      "length": 80,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLPNU",
+        "dataType": "NCHAR",
+        "dataLength": 80,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILPMPN": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILPMPN",
+        "dataType": "NCHAR",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILPNS": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILPNS",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILNLIN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILNLIN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILITM": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILITM",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLITM": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLITM",
+        "dataType": "NCHAR",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILAITM": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILAITM",
+        "dataType": "NCHAR",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILMCU": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILMCU",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLOCN": {
+      "type": "String",
+      "required": false,
+      "length": 40,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLOCN",
+        "dataType": "NCHAR",
+        "dataLength": 40,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLOTN": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLOTN",
+        "dataType": "NCHAR",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILPLOT": {
+      "type": "String",
+      "required": false,
+      "length": 60,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILPLOT",
+        "dataType": "NCHAR",
+        "dataLength": 60,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILSTUN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILSTUN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLDSQ": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLDSQ",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILTRNO": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILTRNO",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILFRTO": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILFRTO",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLMCX": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLMCX",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLOTS": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLOTS",
+        "dataType": "NCHAR",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLOTP": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLOTP",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILLOTG": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILLOTG",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILKIT": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILKIT",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILMMCU": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILMMCU",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILDMCT": {
+      "type": "String",
+      "required": false,
+      "length": 24,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILDMCT",
+        "dataType": "NCHAR",
+        "dataLength": 24,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILDMCS": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILDMCS",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILKCO": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILKCO",
+        "dataType": "NCHAR",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILDOC": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILDOC",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILDCT": {
+      "type": "String",
+      "required": false,
+      "length": 4,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILDCT",
+        "dataType": "NCHAR",
+        "dataLength": 4,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILSFX": {
+      "type": "String",
+      "required": false,
+      "length": 6,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILSFX",
+        "dataType": "NCHAR",
+        "dataLength": 6,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILJELN": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILJELN",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ILICU": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ILICU",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

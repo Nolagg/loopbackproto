@@ -1,0 +1,78 @@
+{
+  "name": "ENVIRONMENTS",
+  "options": {
+    "idInjection": false,
+    "plural": "ENVIRONMENTS",
+    "oracle": {
+      "schema": "ARCTOOLS300",
+      "table": "ENVIRONMENTS"
+    }
+  },
+  "properties": {
+    "ID": {
+      "type": "Number",
+      "id": 1,
+      "required": true,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "READONLY": {
+      "type": "String",
+      "required": true,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "READONLY",
+        "dataType": "VARCHAR2",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "NAME": {
+      "type": "String",
+      "required": true,
+      "length": 20,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "NAME",
+        "dataType": "VARCHAR2",
+        "dataLength": 20,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "DESCRIPTION": {
+      "type": "String",
+      "required": true,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "DESCRIPTION",
+        "dataType": "VARCHAR2",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,409 @@
+{
+  "name": "PURGE_SET",
+  "options": {
+    "idInjection": false,
+    "plural": "PURGE_SET",
+    "oracle": {
+      "schema": "ARCTOOLS300",
+      "table": "PURGE_SET"
+    }
+  },
+  "properties": {
+    "ID": {
+      "type": "Number",
+      "id": 2,
+      "required": true,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "TBL_NAME": {
+      "type": "String",
+      "required": true,
+      "length": 30,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "TBL_NAME",
+        "dataType": "VARCHAR2",
+        "dataLength": 30,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "RANK": {
+      "type": "Number",
+      "required": true,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "RANK",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "PARENT_ID": {
+      "type": "Number",
+      "required": true,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "PARENT_ID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "ULTIMATE_PARENT_ID": {
+      "type": "Number",
+      "required": true,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ULTIMATE_PARENT_ID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "JOIN_TEXT": {
+      "type": "String",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "JOIN_TEXT",
+        "dataType": "VARCHAR2",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ACTIVE": {
+      "type": "String",
+      "required": true,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ACTIVE",
+        "dataType": "VARCHAR2",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "ARCHIVE": {
+      "type": "String",
+      "required": true,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ARCHIVE",
+        "dataType": "VARCHAR2",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "PURGE_MASTER": {
+      "type": "String",
+      "required": true,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "PURGE_MASTER",
+        "dataType": "VARCHAR2",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "MODULE_ID": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "MODULE_ID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "PURGE": {
+      "type": "String",
+      "required": false,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "PURGE",
+        "dataType": "VARCHAR2",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ARCHIVE_CTRL": {
+      "type": "String",
+      "required": false,
+      "length": 10,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ARCHIVE_CTRL",
+        "dataType": "VARCHAR2",
+        "dataLength": 10,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "DISTINCT_CTRL": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "DISTINCT_CTRL",
+        "dataType": "VARCHAR2",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "DUPL_CTRL": {
+      "type": "String",
+      "required": false,
+      "length": 2,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "DUPL_CTRL",
+        "dataType": "VARCHAR2",
+        "dataLength": 2,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "PURGE_CTRL": {
+      "type": "String",
+      "required": false,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "PURGE_CTRL",
+        "dataType": "VARCHAR2",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "JOIN_ALIAS": {
+      "type": "String",
+      "required": false,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "JOIN_ALIAS",
+        "dataType": "VARCHAR2",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "JOIN_CRITERIA": {
+      "type": "String",
+      "required": false,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "JOIN_CRITERIA",
+        "dataType": "VARCHAR2",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "PURGE_HINT": {
+      "type": "String",
+      "required": false,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "PURGE_HINT",
+        "dataType": "VARCHAR2",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ENV_ID": {
+      "type": "Number",
+      "id": 1,
+      "required": true,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ENV_ID",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "N"
+      }
+    },
+    "ARCHIVE_HINT": {
+      "type": "String",
+      "required": false,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ARCHIVE_HINT",
+        "dataType": "VARCHAR2",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ARCHIVE_THROTTLE": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ARCHIVE_THROTTLE",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "PURGE_THROTTLE": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "PURGE_THROTTLE",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "ARCHIVE_COUNT": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "ARCHIVE_COUNT",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "PURGE_COUNT": {
+      "type": "Number",
+      "required": false,
+      "length": 22,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "PURGE_COUNT",
+        "dataType": "NUMBER",
+        "dataLength": 22,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "SOURCE_PK": {
+      "type": "String",
+      "required": false,
+      "length": 500,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "SOURCE_PK",
+        "dataType": "VARCHAR2",
+        "dataLength": 500,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    },
+    "CONCURRENT_AP": {
+      "type": "String",
+      "required": false,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "oracle": {
+        "columnName": "CONCURRENT_AP",
+        "dataType": "VARCHAR2",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

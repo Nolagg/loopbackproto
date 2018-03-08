@@ -1,0 +1,1 @@
+'use strict';module.exports=function(PURGE_MODULE) {};

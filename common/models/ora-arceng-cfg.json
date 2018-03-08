@@ -1,0 +1,14 @@
+{
+  "name": "oraARCENG_CFG",
+  "plural": "ARCENG_CFG",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
