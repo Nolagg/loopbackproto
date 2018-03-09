@@ -3,7 +3,7 @@
   "options": {
     "idInjection": false,
     "plural": "db2F0911",
-    "oracle": {
+    "db2": {
       "schema": "PRODDTA",
       "table": "F0911"
     }
