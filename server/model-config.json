@@ -36,13 +36,33 @@
     "dataSource": "oracleDS",
     "public": false
   },
-  "ENVIRONMENTS": {
-    "dataSource": "oracleDS",
-    "public": false
-  },
   "oraF0911": {
     "dataSource": "oracleDS",
     "public": true
+  },
+  "oraArcF0911": {
+    "dataSource": "oracleDS",
+    "public": true
+  },
+  "msF0911": {
+    "dataSource": "mssqlJDE",
+    "public": true
+  },
+  "mststF0911": {
+    "dataSource": "mssqlTESTDTA",
+    "public": true
+  },
+  "mongoF0911": {
+    "dataSource": "MongoDB",
+    "public": true
+  },
+  "db2F0911": {
+    "dataSource": "localDB2",
+    "public": true
+  },
+  "ENVIRONMENTS": {
+    "dataSource": "oracleDS",
+    "public": false
   },
   "F4111": {
     "dataSource": "oracleDS",
@@ -56,36 +76,12 @@
     "dataSource": "mssqlDS",
     "public": false
   },
-  "msF0911": {
-    "dataSource": "mssqlJDE",
-    "public": true
-  },
   "oraARCENG_CFG": {
     "dataSource": "oracleDS",
-    "public": true
-  },
-  "mststF0911": {
-    "dataSource": "mssqlTESTDTA",
-    "public": true
-  },
-  "mongoF0911": {
-    "dataSource": "MongoDB",
-    "public": true
+    "public": false
   },
   "mongo2F0911": {
     "dataSource": "MongoDB",
     "public": false
-  },
-  "oraArcF0911": {
-    "dataSource": "oracleDS",
-    "public": true
-  },
-  "oraAem2F0911": {
-    "dataSource": "oraAem2DS",
-    "public": true
-  },
-  "db2F0911": {
-    "dataSource": "localDB2",
-    "public": true
   }  
 }

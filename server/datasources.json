@@ -17,24 +17,6 @@
       "acquire": 20000
     }
   },
-  "oraAem2DS": {
-    "host": "192.168.1.194",
-    "port": 1521,
-    "database": "aem2",
-    "username": "ARCTOOLS300",
-    "password": "ARCTOOLS300",
-    "name": "oraAem2DS",
-    "connector": "oracle",
-    "connectionTimeout": 300000000,
-    "requestTimeout": 1000000,
-    "maxRows": 20000,
-    "pool": {
-      "max": 5,
-      "min": 0,
-      "idle": 20000,
-      "acquire": 20000
-    }
-  },
   "mssqlDS": {
     "host": "REDFLT0118",
     "port": 1433,
