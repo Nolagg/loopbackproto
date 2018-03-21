@@ -17,10 +17,6 @@ module.exports=function(db2F0911) {
                   "chunkSize": chunkSize});
 
     };
-    // db2F0911.moveData = function(targetApi,chunkSize) {
-    //     console.log('my target Api is ' + targetApi + ' and the chunkSize I will be using is ' + chunkSize);
-        
-    // };
     // this is the definition of the remote method
     db2F0911.remoteMethod('moveData', {
         description: "Moves all data from one api endpoint to another api endpoint",
